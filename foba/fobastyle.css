@@ -1,0 +1,189 @@
+    html {
+        font-family: 'Inter', sans-serif;
+        box-sizing: border-box;
+    }
+    
+    @font-face {
+        font-family: 'Inter custom';
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: block;
+        font-named-instance: 'Regular';
+        src: url(%PUBLIC_URL%/fonts/Inter-roman.var.woff2) format("woff2 supports variations(gvar)"), url(%PUBLIC_URL%/fonts/Inter-roman.var.woff2) format("woff2-variations"), url(%PUBLIC_URL%/fonts/Inter-roman.var.woff2) format("woff2");
+    }
+    
+    @supports (font-variation-settings: normal) {
+        * {
+            font-family: 'Inter custom', sans-serif;
+        }
+    }
+    
+    h1 {
+        color: #d7d8c9;
+    }
+    
+    h4 {
+        color: #d7d8c9;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    button {
+        user-select: none;
+    }
+    
+    html {
+        font-size: 16px;
+        font-variant: none;
+        font-smooth: always;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on, 'cv03' on;
+    }
+    
+    #background-radial-gradient {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+        width: 200vw;
+        height: 200vh;
+        background: radial-gradient(50% 50% at 50% 50%, #0ffc0710 0%, rgba(255, 255, 255, 0) 100%);
+        transform: translate(-50vw, -100vh);
+        z-index: 0;
+    }
+    
+    html {
+        min-height: 100%;
+        max-height: 100%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        html {
+            background-color: #212429;
+        }
+    }
+    
+    @media (prefers-color-scheme: light) {
+        html {
+            background-color: #F7F8FA;
+        }
+    }
+    
+    .header1 {
+        display: flex;
+        flex-direction: row;
+        background-color: #363827;
+        background-image: url(cheese.png);
+        border-radius: 25px;
+        z-index: 1;
+        position: absolute;
+        width: 94%;
+    }
+    
+    .mainnav {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    #spacer {
+        width: 0%;
+    }
+    
+    #mainlogo {
+        width: 50%;
+    }
+    
+    li {
+        margin: 3px 0;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        padding-top: 1%;
+    }
+    
+    .mainleft {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        flex: 0.5;
+        border-radius: 25px;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 2%;
+    }
+    
+    ul {
+        margin: 5px;
+    }
+    
+    #w {
+        color: #2d66d8;
+    }
+    
+    .mainright {
+        display: flex;
+        flex-direction: column;
+        flex: 0.5;
+        height: 100%;
+        position: relative;
+    }
+    
+    .phaseone {
+        border-radius: 25px;
+        background-color: #363827;
+        background-image: url(cheese.png);
+        margin: 5%;
+        padding: 5%;
+    }
+    
+    #rmlist {
+        font-size: smaller;
+    }
+    
+    h1#rm {
+        color: white;
+    }
+    
+    #bkgimg {
+        position: absolute;
+        transform: translatex(-900px);
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        margin: 100px;
+    }
+    
+    a#mainlogo {
+        display: flex;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #headerlogo {
+        width: 5%;
+        flex: 0.1;
+        justify-self: center;
+    }
+    
+    p#Hp {
+        flex: 0.9;
+    }
